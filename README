@@ -1,25 +1,49 @@
 If you find yourself reading code without a GUI, this .vimrc will help. It turns on a few features to do with search and code folding. If you've never used Vim before, here's the basic list of commands useful when reading (not editing) code:
 
 Basic movement:
-hjkl, Ctrl-d, Ctrl-u, Ctrl-f, Ctrl-b
+h, j, k, l and arrows - move cursor
+b, w, e, B, W, E - move by word
+Ctrl-d, Ctrl-u - up and down half screen
+Ctrl-f, Ctrl-b - forward and backward full screen
+H, L, M - move to top/bottom/middle line of the screen
+nnnG - go to line nnn
+:nnn - same
+G - go to the end of file
+gg - go to the start of file
 
 Code navigation:
-gd, gD - find symbol definitions
-navigation in blocks with %, [{, [(, [/ etc
+gd, gD - find local/global symbol definitions
+navigation in blocks with % (tomatching bracket), [{, [(, [/ (to outer opening bracket) etc
 
+Opening files:
 gf - open file under cursor
+'0 - go to previous file (well, buffer)
 :e filename - open file
+:buffers - list open buffers
+:b n - open buffer n
 
 Windows:
-Ctrl-w s (and Ctrl-w everything else)
-My Vimrc maps Shift-up and Shift-down to navigate between windows
+Ctrl-w s - new window above
+:sp - same
+:vs - new window to the left
+
+My Vimrc maps Shift-up and Shift-down to navigate between (vertically split) windows. 
+It also maps Ctrl-x to "close window if unmodified" (:q)
 
 Searches:
-with / ? n #
-:vimgrep /pattern/[j][g] file file2... fileN
+/regexp - search forward for regexp
+?regexp - backward, 
+n - next resut 
+* - search for word under cursor
+# - same backwards
+:vimgrep /pattern/[j][g] file file2... fileN - search in files
+:nohl - turn current highlight off
 
 Code folding:
-zA (and the whole set: zc, zC, zo, zO, zM, zR)
+zA - toggle fold all for the block containing the current line
+(and the whole set: zc, zC, zo, zO, zM, zR)
 
 Undo:
-u or Shift-u. Or use 'view' instead of 'vi' in shell
+u - undo one change
+Shift-u - undo all changes to current line
+Even better, use 'view' instead of 'vi' in shell - this always opens files read-only
