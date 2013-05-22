@@ -14,7 +14,7 @@ set smartcase
 set hlsearch
 
 " plugin related
-call pathogen#infect()
+" call pathogen#infect()
 
 " information - line numbers, status line
 set number
