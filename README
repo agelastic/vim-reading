@@ -1,7 +1,7 @@
 If you find yourself reading code without a GUI, this .vimrc will help. It turns on a few features to do with search and code folding. If you've never used Vim before, here's the basic list of commands useful when reading (not editing) code:
 
 Basic movement:
-hjkl, Ctrl-D, Ctrl-U, Ctrl-f, Ctrl-B
+hjkl, Ctrl-d, Ctrl-u, Ctrl-f, Ctrl-b
 
 Code navigation:
 gd, gD - find symbol definitions
@@ -11,7 +11,7 @@ gf - open file under cursor
 :e filename - open file
 
 Windows:
-Ctrl-W s (and Ctrl-W everything else)
+Ctrl-w s (and Ctrl-w everything else)
 My Vimrc maps Shift-up and Shift-down to navigate between windows
 
 Searches:
@@ -22,4 +22,4 @@ Code folding:
 zA (and the whole set: zc, zC, zo, zO, zM, zR)
 
 Undo:
-u or Shift-U. Or use 'view' instead of 'vi' in shell
+u or Shift-u. Or use 'view' instead of 'vi' in shell
