@@ -10,8 +10,7 @@ navigation in blocks with %, [{, [(, [/ etc
 gf - open file under cursor
 :e filename - open file
 
-Windows
-
+Windows:
 Ctrl-W s (and Ctrl-W everything else)
 My Vimrc maps Shift-up and Shift-down to navigate between windows
 
