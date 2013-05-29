@@ -21,6 +21,7 @@ gf - open file under cursor
 :e filename - open file
 :buffers - list open buffers
 :b n - open buffer n
+:ba - open windows for all buffers
 
 Windows:
 Ctrl-w s - new window above
@@ -38,10 +39,11 @@ n - next resut
 # - same backwards
 :vimgrep /pattern/[j][g] file file2... fileN - search in files
 :nohl - turn current highlight off
+K - look up the word under cursor in man pages. nK - look up in section n, e.g. 5K
 
 Code folding:
 zA - toggle fold all for the block containing the current line
-(and the whole set: zc, zC, zo, zO, zM, zR)
+(and the whole set: zc, zC, zo, zO, zM, zR, zi)
 
 Undo:
 u - undo one change
