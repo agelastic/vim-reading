@@ -56,3 +56,10 @@ map    <S-Up>      <esc><C-w><Up>
 map    <S-Down>    <esc><C-w><Down>
 imap   <S-Up>      <esc><C-w><Up>
 imap   <S-Down>    <esc><C-w><Down>
+
+set cursorline
+set noswapfile
+set splitbelow splitright
+set showcmd
+set linebreak
+set autoindent
